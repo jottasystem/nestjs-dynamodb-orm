@@ -1,0 +1,72 @@
+{
+  "name": "nestjs-dynamodb-orm",
+  "version": "1.0.0",
+  "description": "Decorator-based DynamoDB ORM for NestJS with typed errors, lifecycle hooks, composite search keys, and GSI/LSI support.",
+  "author": "João Paulo <jotta.paulo27@gmail.com>",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "keywords": [
+    "dynamodb",
+    "orm",
+    "nestjs",
+    "aws",
+    "decorator",
+    "typescript",
+    "repository",
+    "gsi",
+    "lsi"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jottasystem/nestjs-dynamodb-orm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jottasystem/nestjs-dynamodb-orm/issues"
+  },
+  "homepage": "https://github.com/jottasystem/nestjs-dynamodb-orm#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "rimraf dist && tsc -p tsconfig.build.json",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint \"src/**/*.ts\"",
+    "lint:fix": "eslint \"src/**/*.ts\" --fix",
+    "prepublishOnly": "npm run lint && npm run test && npm run build"
+  },
+  "peerDependencies": {
+    "@aws-sdk/client-dynamodb": "^3.0.0",
+    "@aws-sdk/lib-dynamodb": "^3.0.0",
+    "@nestjs/common": "^9.0.0 || ^10.0.0 || ^11.0.0",
+    "reflect-metadata": "^0.1.13 || ^0.2.0"
+  },
+  "devDependencies": {
+    "@aws-sdk/client-dynamodb": "^3.658.0",
+    "@aws-sdk/lib-dynamodb": "^3.658.0",
+    "@nestjs/common": "^10.4.4",
+    "@types/jest": "^29.5.13",
+    "@types/node": "^20.16.10",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "eslint": "^8.57.1",
+    "fast-check": "^3.22.0",
+    "jest": "^29.7.0",
+    "reflect-metadata": "^0.2.2",
+    "rimraf": "^6.0.1",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}

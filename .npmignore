@@ -1,0 +1,13 @@
+src
+coverage
+node_modules
+.github
+.eslintrc.json
+.gitignore
+.npmignore
+jest.config.ts
+tsconfig.json
+tsconfig.build.json
+*.tsbuildinfo
+*.log
+.DS_Store
