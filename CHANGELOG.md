@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.0.0] — Unreleased
+## [1.0.0] — 2026-08-13
 
 ### Added
 
@@ -28,6 +28,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Tests
 
-- 367 tests across 20 suites — unit, integration with mocked SDK, property-based via `fast-check`, and a dedicated regression suite for every bug class addressed in pre-release hardening.
+- 354 tests across 20 suites — unit, integration with mocked SDK, property-based via `fast-check`, and a dedicated regression suite for every bug class addressed in pre-release hardening.
 - 95% statement / 97% line / 96% function / 80% branch coverage across the public surface.
 - `strict: true` in tsconfig.
